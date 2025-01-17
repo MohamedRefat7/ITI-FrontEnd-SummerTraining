@@ -1,0 +1,21 @@
+@import "abstract/variables";
+@import "abstract/mixins";
+
+////////////////vendors//////////////////////
+
+/// //////////////base/////////
+@import "base/reset.scss";
+
+
+////////////layout///////////////////
+@import "./layout/sectionDept.scss";
+/// 
+/// /////////components////////
+@import "components/btns.scss";
+
+@import "components/titles.scss";
+
+
+//////////////pages//////////////
+/// 
+/// ///////////themes//////////

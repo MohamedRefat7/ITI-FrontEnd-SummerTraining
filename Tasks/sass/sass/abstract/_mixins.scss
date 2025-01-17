@@ -1,0 +1,11 @@
+// @mixin changeColor($x:red,$y:green) {
+//     color:$x;
+//     background-color: $y;
+//     border:2px solid;
+// }
+@mixin hover($background) {
+    color:$light-color;
+    background-color: $background;
+
+    
+}

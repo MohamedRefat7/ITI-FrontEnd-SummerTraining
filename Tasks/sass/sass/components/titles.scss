@@ -1,0 +1,13 @@
+.title{
+    text-transform: capitalize;
+    font-family: $font-style;
+    &__header{
+        color:$dark-color;
+        margin-bottom: 13px;
+
+    }
+    &__para{
+        color:$font_color;
+
+    }
+}

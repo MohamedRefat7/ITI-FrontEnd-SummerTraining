@@ -1,0 +1,12 @@
+.department{
+    height: 300px;
+    background-color: $primary-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    &__btn{
+        margin-top: 28px;
+    }
+
+}
