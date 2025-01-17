@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.6.0.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <ul class="tab_navigation">
+            <li>Tab1</li>
+            <li>Tab2</li>
+            <li>Tab3</li>
+        </ul>
+        <div class="tab_container_area">
+            <div class="tab_container">
+                <p>tab1</p>
+            </div>
+            <div class="tab_container">
+                <p>tab2</p>
+            </div>
+            <div class="tab_container">
+                <p>tab3</p>
+            </div>
+        </div>
+    </div>
+   <style>
+   *{
+    box-sizing: border-box;
+}
+html,body{
+    margin: 0px;
+    font-size: 18px;
+    font-family: arial;
+    line-height: 1.6;
+}
+.container{
+    max-width: 700px;
+    margin: 0 auto;
+}
+.tab_navigation{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.tab_navigation li{
+    display: inline-block;
+    padding: 5px 15px;
+    background: blue;
+    min-width: 100px;
+    text-align: center;
+    color: aqua;
+    border-radius: 5px 5px 0 0 ;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+.tab_navigation li.active , .tab_navigation li.hover{
+    background: #035091;
+}
+.tab_container_area {
+ border: #035091;
+}
+
+.tab_container{
+    padding: 10px;
+    background: blueviolet;
+    color: aquamarine;
+    border-radius: 0 5px 5px 5px;
+    display: none;
+}
+</style>
+<script>
+    $(document).ready(function(){
+         $('.tab_container:first').show()
+         $('.tab_navigation li:first').addClass('active');
+         $('.tab_navigation li').click(function(event){
+             index = $(this).index();
+             $('.tab_navigation li').removeClass('active');
+             $(this).addClass('active');  
+             $('.tab_container').hide(); 
+             $('.tab_container').eq(index).show(); 
+         });
+    });
+</script>
+</body>
+
+</html>

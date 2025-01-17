@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.6.0.js"></script>
+    <style>
+        .active{
+            /* width: 300px;
+            height: 300px; */
+            background-color: aqua;
+            border: 2px solid blue;
+            /* position: relative; */
+        }
+        div{
+            width: 100px;
+            /* height: 100px; */
+            display: inline-block;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="active">
+       <span>tab1</span> 
+       <div>
+
+           <p>para</p>
+       </div>
+       <span>span</span>
+    </div>
+    <div>
+        <span>tab1</span> 
+     </div>
+     <div>
+        <span>tab1</span> 
+     </div>
+    <!-- <div>
+        tab2
+    </div>
+    <div>
+        tab3
+    </div> -->
+    <script>
+     $(".active").find("p").css("color","red").end().css("background-color","blue");
+        // $("div").not(".active").css("background-color","red");
+// /$("div").attr("alt","hamada").css("color","green").hide();
+      
+        // $(".active").remove();
+        // var current = $(".active");
+        // $("div").click(function(){
+        //     $(this).addClass("active");
+        //     current.removeClass("active");
+        //     current = $(this);
+            
+
+
+        // })
+
+    </script>
+    <!-- ///////////////////////////////////////////////// -->
+    <!-- <input type="text"> -->
+    <!-- <div>
+        <span>hello</span>
+
+    </div> -->
+    <!-- <button onclick="fadeInDiv()">
+        fade In
+    </button>
+    <button onclick="fadeOutDiv()">
+        fade Out
+    </button> -->
+    <!-- <button onclick="fadeToggleDiv()">
+        fade Toggle
+    </button>
+    <button onclick="moveRigth()">
+        move
+    </button> -->
+    <!-- <button onclick="stopAnimation()">
+        stop
+    </button>
+    <button onclick="test()">
+        test
+    </button> -->
+    <!-- <script>
+        function fadeInDiv(){
+           // $("div").fadeIn(2000);
+          // $("div").show();
+          $("div").slideDown(2000);
+        }
+        function fadeOutDiv(){
+           // $("div").fadeOut(3000);
+        //    $("div").hide();
+        $("div").slideUp(3000);
+        }
+        function fadeToggleDiv(){
+            // $("div").fadeToggle(5000);
+            //$("div").toggle();
+            $("div").slideToggle(1000);
+        }
+        function moveRigth(){
+            $("div").animate({
+                "left":"400px"
+            },2000)
+        }
+        function stopAnimation(){
+            $("div").stop();
+        }
+        function test(){
+           //alert($("div").text());//get
+          // $("div").text("<span>menna</span>");//set
+          //alert($("div").html());//get
+         // $("div").html("<span>menna</span>");
+        // alert($("input").val())//get
+        $("input").val("");
+        }
+    </script> -->
+</body>
+</html>

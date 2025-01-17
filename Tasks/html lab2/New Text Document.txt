@@ -1,0 +1,87 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+        * {
+          box-sizing: border-box;
+        }
+        
+        /* Create three equal columns that floats next to each other */
+        .column {
+          float: left;
+          width: 33.33%;
+          padding: 10px;
+          height: 300px; /* Should be removed. Only for demonstration */
+        }
+        
+        /* Clear floats after the columns */
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        </style>
+        </head>
+    <body>
+        <table border="1" width="100%" cellspacing="5" cellpadding="10">
+            <caption>JAPANESE CARS</caption>
+            <tr>
+                <td align="center">There are many japanese cars.Here are some that you can find sometimes in the streets</td>
+               <tr> 
+                <td align="center">for more information on cars,try going to <a href="http://jdm-expo.com/3-vehicle-inventory">JDM Cars</a></td>
+               </tr>
+            </tr>
+            <tr>
+                <td align="center">...................................................................................................................................................................................................</td>
+            </tr>
+
+        </table>
+        <table>
+        <div class="row">
+            <div class="column" >
+              <h2></h2>
+              <img src="61A-gvm-pjL._AC_SX466_.jpg" alt="Trulli" width="300" height="250">
+              <p>NISSAN SKYLINE R34</p>
+              <p>i have stage 2 with 600 HP </p>
+            </div>
+            <div class="column" >
+              <h2></h2>
+              <img src="E0GF25RXoAIV0Cm.jpg" alt="Trulli" width="300" height="250">
+              <p>NISSAN SKYLINE ORIGIN</p>
+              <p>i have stage 1 with 500 HP</p>
+            </div>
+            <div class="column" >
+              <h2></h2>
+              <img src="E74i96SXsAkRfeT.jpg" alt="Trulli" width="300" height="250">
+              <p>THE-KING-TOYTA SUPRA </p>
+              <p>i'm stock.....at least i'm 800 HP </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="column" >
+              <h2></h2>
+              <img src="JDMs-All-Car-Enthusiasts-Should-Know-Nissan-skyline.jpg" alt="Trulli" width="300" height="250">
+              <p>NISSAN SKYLINE NISMO</p>
+              <p>i'm the most handsome  </p>
+            </div>
+            <div class="column" >
+              <h2></h2>
+              <img src="jdm-drift-cars-750x422.jpg" alt="Trulli" width="300" height="250">
+              <p>ALLOY BLACK-SKYLINE-R34</p>
+              <p>I'M THE KING OF THE TRACK</p>
+            </div>
+            <div class="column" >
+              <h2></h2>
+              <img src="f2f53785d961da80ab00b19c37a2745c.jpg" alt="Trulli" width="300" height="250">
+              <p>  BLACK-SKYLINE-R34  </p>
+              <p>DO you think you can beat me </p>
+            </div>
+          </div>
+          
+            
+       
+        
+
+        
+    </body>
+</html>

@@ -1,0 +1,79 @@
+/* 
+#testDiv{
+    width: 400px;
+    height: 400px;
+    background-color: blue;
+    background-image: repeating-linear-gradient( blue , rgb(255, 247, 0) 50%);
+    font-size: 20px;
+    font-weight: 600;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+} */
+
+
+
+@font-face{
+    src: url(./fonts/borneo--.ttf);
+    font-family: firstFont;
+}
+
+@font-face{
+    src: url(./fonts/BebasNeue-Regular.ttf);
+    font-family: SecondFont;
+}
+
+.class1{
+    background-color: red !important;
+}
+
+.class2 {
+    background-color: blue;
+}
+
+/* font rule */
+/* @font-face {
+    font-family: myfirstfont;
+    src: url(./fonts/borneo--.ttf);
+} */
+
+
+@keyframes myFirstAnimation{
+
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+  
+}
+
+#testDiv{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-color: coral;
+    /* background-image: linear-gradient(red 50%, black 50%); */
+    font-family: myfirstfont;
+    animation-name: myFirstAnimation;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    /* animation: myFirstAnimation 5s 1s ease forwards; */
+}
+
+
+#btn{
+    width: 100px;
+    background-color: blueviolet;
+    font-size: 20px;
+    font-family: firstFont;
+    cursor: pointer;
+    position: relative;
+}
+
+
+#btn:hover{
+    top: 20px;
+    transition: top 4s;
+}
+

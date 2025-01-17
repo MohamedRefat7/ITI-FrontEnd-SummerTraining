@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    number is equal <span id="num"></span>
+    <script>
+        document.getElementById("num").innerHTML=localStorage.getItem("numbervalue");
+        document.getElementById("num").innerHTML=window.localStorage.getItem("numbervalue");
+        function getCurrentColor() { 
+    bgcolor = window.localStorage.getItem("numbervalue");
+        }
+        
+    </script>
+</body>
+</html>

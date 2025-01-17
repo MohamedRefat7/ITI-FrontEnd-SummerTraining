@@ -1,0 +1,32 @@
+
+.title-1 {
+    color: red;
+    font-size: 50px;
+    position: fixed;
+    left: 500px;
+
+}
+img{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    width: 200px;
+
+  }
+.seconddiv{
+    background-color: darkgrey;
+   width: 1000px;
+   margin: auto;
+   
+    
+    
+    
+    
+}
+
+#btn {
+    background-color: yellow;
+    
+   
+
+}

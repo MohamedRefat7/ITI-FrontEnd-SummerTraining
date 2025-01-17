@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rock Paper Scissors</title> 
+    </head>
+
+    <body>
+      <div style="display: flex;" ondragover="event.preventDefault()">
+    <img src="ورقةpng.png" width="300px" id="Paper" draggable="true" ondragstart="dragpaper(event)" ondrop="droptpaper(event)">
+    <img src="حجر.png" width="300px" id="Rock" draggable="true" ondragstart="dragrrock(event)" ondrop="droptrock(event)">
+    <img src="مقص.png" width="300px" id="scr" draggable="true" ondragstart="dragscr(event)" ondrop="droptscr(event)">
+</div>
+<script src="script.js"></script>
+    </body>
+</html>

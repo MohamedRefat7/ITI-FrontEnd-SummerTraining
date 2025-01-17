@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.6.0.js"></script>
+</head>
+<body>
+   
+    <script>
+        function taskadd() {
+     taskNew = new objectTask();
+ }
+ 
+ function objectTask() {
+     var task = document.getElementById('textinput').value;
+     var listItem = document.createElement("li");
+     var checkbox = document.createElement("input")
+     checkbox.type = "checkbox";
+     listItem.appendChild(checkbox);
+     var itemText = document.createTextNode(task);
+     listItem.appendChild(itemText);
+     document.getElementById('place').appendChild(listItem);
+ }
+ 
+ function deleteCheckBox() {
+     var ul = document.getElementById('place');
+     var li = ul.children;
+     for (var i=0; i < li.length; i++) {
+         while(li[i] && li[i].children[0].checked) {
+             ul.removeChild(li[i]);
+         }
+     }
+ }
+
+     </script>
+           <div id="list">
+            <input type='text' id='textinput' />
+            <input type='button' onclick='taskadd()' value='Add to list' />
+            <input type='button' onclick="deleteCheckBox()" value='Delete' />
+            <ul id="place"></ul>
+        </div>
+
+    
+</body>
+</html>
